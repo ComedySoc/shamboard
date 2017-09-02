@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.*?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.textfield.CustomTextField?>
 <BorderPane stylesheets="/sample/style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="sample.Controller">
     <center>
         <GridPane fx:id="buttonGrid" alignment="center" hgap="10" style="-fx-background-color: pink" vgap="10">
             <ButtonBar fx:id="btnbarTop">
                 <buttons>
-                    <Button fx:id="btnSting" onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button fx:id="btnSting" onAction="#playSound">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="BOLT" styleClass="mainButtonGlyphs"/>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="btnHouseMusic" onAction="#playSound">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="HOME" styleClass="mainButtonGlyphs"/>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="btnRunOn" onAction="#playSound">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="SIGN_IN" styleClass="mainButtonGlyphs"/>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="btnRunOff" onAction="#playSound">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="SIGN_OUT" styleClass="mainButtonGlyphs"/>
+                        </graphic>
+                    </Button>
                     <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
@@ -25,7 +43,7 @@
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="1">
                 <buttons>
-                    <Button fx:id="btnHouseMusic" onAction="#playSound"/>
+                    <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
@@ -161,4 +179,25 @@
     <top>
         <Label fx:id="lblNowPlaying" alignment="CENTER" text="Now Playing"/>
     </top>
+
+    <right>
+        <VBox>
+            <ToolBar fx:id="barSearch">
+                <items>
+                    <CustomTextField fx:id="fieldSearch" prefWidth="230.0" styleClass="searchField">
+                        <left>
+                            <Label fx:id="lblSearch">
+                                <graphic>
+                                    <FontAwesomeIconView glyphName="SEARCH"/>
+                                </graphic>
+                            </Label>
+                        </left>
+                    </CustomTextField>
+                    <Label fx:id="labelMatches"/>
+                </items>
+            </ToolBar>
+
+            <ListView prefWidth="248.0" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </right>
 </BorderPane>
