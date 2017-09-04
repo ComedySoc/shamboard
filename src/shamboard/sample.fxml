@@ -5,8 +5,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import org.controlsfx.control.textfield.CustomTextField?>
-<BorderPane stylesheets="/sample/style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="sample.Controller">
+<BorderPane stylesheets="/shamboard/style.css" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="shamboard.Controller">
     <center>
         <GridPane fx:id="buttonGrid" alignment="center" hgap="10" style="-fx-background-color: pink" vgap="10">
             <ButtonBar fx:id="btnbarTop">
@@ -26,7 +27,7 @@
                             <FontAwesomeIconView glyphName="SIGN_IN" styleClass="mainButtonGlyphs"/>
                         </graphic>
                     </Button>
-                    <Button fx:id="btnRunOff" onAction="#playSound">
+                    <Button fx:id="btnRunOff" onAction="#playRunOffMusic">
                         <graphic>
                             <FontAwesomeIconView glyphName="SIGN_OUT" styleClass="mainButtonGlyphs"/>
                         </graphic>

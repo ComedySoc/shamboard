@@ -1,4 +1,4 @@
-package sample;
+package shamboard;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
