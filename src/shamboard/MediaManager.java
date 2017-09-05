@@ -3,8 +3,6 @@ package shamboard;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
@@ -19,26 +17,40 @@ public final class MediaManager {
         return INSTANCE;
     }
 
-    public void play(String songName) {
-        boolean playing = mediaPlayer != null && mediaPlayer.getStatus().equals(MediaPlayer.Status.PLAYING);
+    private void stopCurrentTrack() {
+        mediaPlayer.stop();
+        mediaPlayer.dispose();
+    }
 
-        if (playing) {
-            Timeline timeline = new Timeline(
-                    new KeyFrame(Duration.seconds(1),
-                            new KeyValue(mediaPlayer.volumeProperty(), 0)));
-            timeline.setOnFinished(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent event) {
-                    mediaPlayer.stop();
-                    mediaPlayer.dispose();
-                }
-            });
-            timeline.play();
-        }
-
+    private void playNewTrack(String songName) {
         songName = "src/media/" + songName;
         Media song = new Media(new File(songName).toURI().toString());
         mediaPlayer = new MediaPlayer(song);
         mediaPlayer.play();
+    }
+
+    public void play(String songName) {
+        boolean playing = mediaPlayer != null && mediaPlayer.getStatus().equals(MediaPlayer.Status.PLAYING);
+
+        if (playing) {
+            if (SystemVars.getInstance().fade) {
+                Timeline timeline = new Timeline(
+                        new KeyFrame(Duration.seconds(1),
+                                new KeyValue(mediaPlayer.volumeProperty(), 0)));
+
+                timeline.setOnFinished(event -> {
+                    stopCurrentTrack();
+                    playNewTrack(songName);
+                });
+                timeline.play();
+            } else {
+                stopCurrentTrack();
+                playNewTrack(songName);
+            }
+
+        } else {
+            playNewTrack(songName);
+        }
+
     }
 }

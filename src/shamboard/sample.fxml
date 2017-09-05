@@ -35,7 +35,7 @@
                     <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button fx:id="btnFade" text="FADE" onAction="#toggleFade"/>
                 </buttons>
                 <GridPane.margin>
                     <Insets bottom="30.0"/>

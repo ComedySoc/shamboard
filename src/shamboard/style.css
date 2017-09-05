@@ -1,5 +1,7 @@
 #btnbarTop .button, #vboxRightButtons .button {
     -fx-background-radius: 5em;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
 }
 
 .launchpadButtons .button, #btnbarTop .button, #vboxRightButtons .button {
