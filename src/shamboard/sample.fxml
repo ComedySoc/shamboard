@@ -13,29 +13,45 @@
             <ButtonBar fx:id="btnbarTop">
                 <buttons>
                     <Button fx:id="btnSting" onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="Sting"/>
+                        </tooltip>
                         <graphic>
                             <FontAwesomeIconView glyphName="BOLT" styleClass="mainButtonGlyphs"/>
                         </graphic>
                     </Button>
                     <Button fx:id="btnHouseMusic" onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="House Music"/>
+                        </tooltip>
                         <graphic>
                             <FontAwesomeIconView glyphName="HOME" styleClass="mainButtonGlyphs"/>
                         </graphic>
                     </Button>
                     <Button fx:id="btnRunOn" onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="Run On"/>
+                        </tooltip>
                         <graphic>
                             <FontAwesomeIconView glyphName="SIGN_IN" styleClass="mainButtonGlyphs"/>
                         </graphic>
                     </Button>
                     <Button fx:id="btnRunOff" onAction="#playRunOffMusic">
+                        <tooltip>
+                            <Tooltip text="Run off"/>
+                        </tooltip>
                         <graphic>
                             <FontAwesomeIconView glyphName="SIGN_OUT" styleClass="mainButtonGlyphs"/>
                         </graphic>
                     </Button>
                     <Button onAction="#playSound"/>
                     <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
                     <Button fx:id="btnFade" text="FADE" onAction="#toggleFade"/>
+                    <Button fx:id="btnStop" onAction="#stop">
+                        <graphic>
+                            <FontAwesomeIconView glyphName="STOP" styleClass="mainButtonGlyphs"/>
+                        </graphic>
+                    </Button>
                 </buttons>
                 <GridPane.margin>
                     <Insets bottom="30.0"/>
@@ -44,105 +60,361 @@
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="1">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="2">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="3">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="4">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="5">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="6">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="7">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
             <ButtonBar styleClass="launchpadButtons" GridPane.rowIndex="8">
                 <buttons>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
-                    <Button onAction="#playSound"/>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
+                    <Button onAction="#playSound">
+                        <tooltip>
+                            <Tooltip text="No Audio Allocated"/>
+                        </tooltip>
+                    </Button>
                 </buttons>
             </ButtonBar>
 
@@ -178,7 +450,18 @@
         </GridPane>
     </center>
     <top>
-        <Label fx:id="lblNowPlaying" alignment="CENTER" text="Now Playing"/>
+        <VBox>
+            <MenuBar fx:id="barOptions">
+                <menus>
+                    <Menu>
+                        <graphic>
+                            <Label text="Options" onMouseClicked="#openOptionsDialog"/>
+                        </graphic>
+                    </Menu>
+                </menus>
+            </MenuBar>
+            <Label fx:id="lblNowPlaying" alignment="CENTER" text="Now Playing"/>
+        </VBox>
     </top>
 
     <right>
